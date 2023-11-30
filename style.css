@@ -1,0 +1,60 @@
+/* #map { 
+  height: 480px; 
+} */
+@font-face {
+  font-family: "cinzel";
+  src: url('fonts/CinzelDecorative-Regular.ttf');
+}
+@font-face {
+  font-family: "play";
+  src: url('fonts/PlayfairDisplay-Italic-VariableFont_wght.ttf');
+}
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html, body, #map {
+  height: 100%;
+  width: 100vw;
+}
+#legend{
+  font-family: "play" ;
+  position: fixed;
+  z-index: 1000;
+  top: 10%;
+  right: 10%;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+h1{
+  font-family: "cinzel" ;
+  position: fixed;
+  top: 50px;
+  left: 50px;
+  z-index: 1000;
+  text-orientation: upright;
+  writing-mode: vertical-lr;
+  font-size: 100%;
+}
+/* #collapselegend{
+  background-color: plum ;
+} */
+/* iconos numerados */
+.leaflet-div-icon {
+  background: transparent;
+  border: none;
+}
+.leaflet-marker-icon .number{
+  position: relative;
+  top: -80px;
+  left:20px;
+  font-size: 24px;
+  width: 25px;
+  text-align: center;
+  font-weight: bold;
+}
+.leaflet-popup-content{
+  background-color: rgb(193, 193, 246);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
